@@ -128,6 +128,7 @@ function Login() {
                     onChange={onChange}
                     id="auth-login-v2-password"
                     error={Boolean(errors.password)}
+                    type="password"
                   />
                 )}
               />

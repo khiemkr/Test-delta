@@ -40,7 +40,6 @@ function Home() {
       })
     );
     setShowDialog(false);
-
   };
 
   return (
@@ -78,7 +77,7 @@ function Home() {
                     price={item.price}
                     img={item.thubnail}
                     id={item.id}
-                    handleDelete={handleDelete}
+                    handleDelete={() => handleDelete(item.id)}
                     year={item.year}
                   />
                 </Grid>

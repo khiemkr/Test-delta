@@ -1,0 +1,44 @@
+{
+  "Product": [
+    {
+      "id": "id1",
+      "name": "Iphone X",
+      "price": "10000",
+      "year": "2000",
+      "thubnail": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/09/17/apple-iphone-11-64gb-6.1.jpg",
+      "description": "this is a mobile phone"
+    },
+    {
+      "id": "id2",
+      "name": "Iphone 11",
+      "price": "10000",
+      "year": "2000",
+      "thubnail": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/09/17/apple-iphone-11-64gb-6.1.jpg",
+      "description": "this is a mobile phone"
+    },
+    {
+      "id": "id3",
+      "name": "Iphone 11 Pro",
+      "price": "10000",
+      "year": "2000",
+      "thubnail": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/09/17/apple-iphone-11-64gb-6.1.jpg",
+      "description": "this is a mobile phone"
+    },
+    {
+      "id": "id4",
+      "name": "Iphone 12",
+      "price": "10000",
+      "year": "2000",
+      "thubnail": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/09/17/apple-iphone-11-64gb-6.1.jpg",
+      "description": "this is a mobile phone"
+    },
+    {
+      "id": "id5",
+      "name": "Iphone 12 Pro ",
+      "price": "10000",
+      "year": "2000",
+      "thubnail": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/09/17/apple-iphone-11-64gb-6.1.jpg",
+      "description": "this is a mobile phone"
+    }
+  ]
+}

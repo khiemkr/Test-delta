@@ -11,7 +11,7 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
 const schema = yup.object().shape({
-  identifier: yup.string().required(),
+  identifier: yup.string().email().required("Vui lòng nhập du lieu"),
   password: yup
     .string()
     .min(8, "Mật khẩu tối thiểu 8 kí tự")
@@ -33,7 +33,7 @@ function Login() {
 
   const onSubmit = async (data) => {
     setLoading(true);
-     if(data.identifier == 'admin' && data.password == '123456789'){
+     if(data.identifier == 'admin@gmail.com' && data.password == '123456789'){
       navi("/home", { replace: true });
      }else{
        alert('Tài khoản hoặc mật khẩu không chính xác vui lòng kiểm tra lại')
@@ -66,7 +66,7 @@ function Login() {
                 color="warning"
                 sx={{ color: "#444" }}
               >
-                Tài khoản
+                Email
               </InputLabel>
               <Controller
                 name="identifier"
@@ -89,12 +89,13 @@ function Login() {
                     onChange={onChange}
                     error={Boolean(errors.identifier)}
                     placeholder=""
+                    type="email"
                   />
                 )}
               />
               {errors.identifier && (
                 <FormHelperText sx={{ color: "error.main" }}>
-                  {"Tên đăng nhập hoặc mật khẩu không chính xác"}
+                  {errors.identifier.message}
                 </FormHelperText>
               )}
             </FormControl>
